@@ -25,3 +25,37 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## let set up backend simple json server
+ let's set up a simple JSON server as a mock backend to provide the API endpoints for creating and fetching employees.
+
+Step 1: Install JSON Server
+Open your terminal and run the following command to install JSON Server globally:
+
+npm install -g json-server
+
+Step 2: Create a mock JSON file
+Create a new file called db.json in the root directory of your project and add the following content:
+
+{
+  "employees": []
+}
+
+Step 3: Start the JSON Server
+In the terminal, navigate to the root directory of your project and run the following command to start the JSON Server:
+
+json-server --watch db.json
+
+
+Step 4: Update the API URL
+In the src/app/employee.service.ts file, update the apiUrl variable to use the JSON Server URL:
+
+private apiUrl = 'http://localhost:3000/employees';
+
+With these changes, you should now have a working JSON API for employee details using Angular and JSON Server.
+
+Please note that this setup is for mocking the backend and is not suitable for a production environment. In a real production scenario, you would need to set up a proper backend server with appropriate APIs to handle the employee data.
+
+
+
