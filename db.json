@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "deepak",
+      "email": "dtdeerock@gmail.com",
+      "contact": "8652689225",
+      "salary": 20000000
+    },
+    {
+      "id": 2,
+      "name": "deepak",
+      "email": "dtdeerock@gmail.com",
+      "contact": "8652689225",
+      "salary": 5000000
+    },
+    {
+      "id": 3,
+      "name": "deepak",
+      "email": "dtdeerock@gmail.com",
+      "contact": "8652689225",
+      "salary": 300000
+    }
+  ]
+}
